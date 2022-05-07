@@ -1,0 +1,11 @@
+{
+  "name": "apiconprismadb",
+  "version": "1.0.0",
+  "description": "Práctica de LaunchX Mission NodeJs. En esta práctica desarrollamos un api con Express, Postgresql y Prisma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
