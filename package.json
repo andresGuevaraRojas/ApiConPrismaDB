@@ -4,11 +4,15 @@
   "description": "Práctica de LaunchX Mission NodeJs. En esta práctica desarrollamos un api con Express, Postgresql y Prisma",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linter": "eslint .",
+    "linter-fix": "eslint . --fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.15.0"
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
