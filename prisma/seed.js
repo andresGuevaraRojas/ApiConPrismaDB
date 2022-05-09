@@ -54,6 +54,32 @@ const prisma = new PrismaClient();
         });
 
         console.log('Create 3 explorers');
+
+        const course = await prisma.course.upsert({
+            where:{name:'Az-900'},
+            update:{},
+            create:{
+                name:'Az-900',
+                lang:'Español',
+                enrollments:100,
+                hasCertification:true
+            }
+        });
+
+        const course1 = await prisma.course.upsert({
+            where:{name:'Java'},
+            update:{},
+            create:{
+                name:'Java',
+                lang:'Español',
+                enrollments:100,
+                hasCertification:false
+            }
+        });
+
+        console.log('Create 2 courses');
+
+
     } catch (error) {
         console.log(error)
         process.exit(1);
