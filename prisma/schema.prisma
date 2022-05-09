@@ -22,8 +22,10 @@ model Explorer {
 
 model Course{
   id Int @id @default(autoincrement())
-  name String
+  name String @unique
   lang String @db.VarChar(255)
   enrollments Int @default(0)
   hasCertification Boolean @default(false)
+  dateCreated DateTime @default(now())
+  lastUpsated DateTime @updatedAt
 }
